@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 
 TELEGRAM_BOT_TOKEN = '7580203890:AAFiOEC7jHmf9jfqy7vzf5jRh65S2V67pj0'
-ADMIN_USER_ID = {7383077317, 1234567890, 9876543210}  # Add more admin IDs here
+ADMIN_USER_ID = {7383077317, 1202212810, 1066744659, 5158837938, 6240348610, 8159441634 }  # Add more admin IDs here
 USERS_FILE = 'users.txt'
 LOG_FILE = 'log.txt'
 VIP_in_progress = False
@@ -134,7 +134,7 @@ async def run_VIP(chat_id, ip, port, duration, context):
     VIP_in_progress = True
 
     try:
-        command = f"./SOULCRACK {ip} {port} {duration} "
+        command = f"./mmm {ip} {port} {duration} "
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
