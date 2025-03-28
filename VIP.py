@@ -134,7 +134,7 @@ async def run_VIP(chat_id, ip, port, duration, context):
     VIP_in_progress = True
 
     try:
-        command = f"./mmm {ip} {port} {duration} 1800"
+        command = f"./bgmi {ip} {port} {duration} 1300"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
